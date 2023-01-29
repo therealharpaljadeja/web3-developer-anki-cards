@@ -1,0 +1,21 @@
+name: Request a Deck
+description: Request a new deck to be added to the repo
+title: "[Deck]: "
+body:
+  - type: dropdown
+      attributes:
+          label: Is this web3 related?
+          options:
+              - "Yes"
+              - "No"
+      validations:
+          required: true
+  - type: input
+    id: reading_material
+    attributes:
+      label: Link to reading material
+      description: "Link to the reading material using which the Deck can be created."
+      placeholder: "https://ethereum.org"
+    validations:
+      required: true
+    
